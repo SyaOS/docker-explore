@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Docker Explore</title>
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.1/css/bulma.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Docker Explore</h1>
+        <p class="subtitle">List official docker images in a page.</p>
+      </div>
+    </div>
+  </header>
+  <main class="section">
+    <div class="container">
+      <div class="columns is-multiline">
+        {{#repositories}}
+        <div class="column is-half">
+          <article class="card">
+            <header class="card-header">
+              <h2 class="card-header-title">{{name}}</h2>
+            </header>
+            <div class="card-content">
+              <p>{{description}}</p>
+            </div>
+            <footer class="card-footer">
+              <a href="https://hub.docker.com/_/{{name}}" class="card-footer-item">Docker Hub</a>
+            </footer>
+          </article>
+        </div>
+        {{/repositories}}
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="has-text-centered">Built with ❤ by <a href="https://www.sya.org.cn/">Sya</a></p>
+    </div>
+  </footer>
+</body>
+</html>
