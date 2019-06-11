@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node --require dotenv/config .",
     "dev": "nodemon --require dotenv/config .",
-    "test": "standard"
+    "pretest": "standard",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,9 @@
     "mustache": "^2.3.2"
   },
   "devDependencies": {
+    "axiosist": "^0.6.1",
+    "content-type": "^1.0.4",
+    "mocha": "^6.1.4",
     "nodemon": "^1.18.3",
     "standard": "^11.0.1"
   }
