@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/SyaOS/docker-explore#readme",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "dotenv": "^6.0.0",
     "koa": "^2.5.2",
     "mustache": "^2.3.2"
